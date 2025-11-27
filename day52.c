@@ -21,7 +21,7 @@ int main() {
     
     int index = -1;
     
-    // Linear search for smallest element >= x
+
     for (int i = 0; i < n; i++) {
         if (arr[i] >= x) {
             index = i;

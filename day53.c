@@ -27,7 +27,7 @@ int main() {
         int rightSum = totalSum - leftSum - nums[i];
         if (leftSum == rightSum) {
             pivotIndex = i;
-            break;  // leftmost pivot
+            break;  
         }
         leftSum += nums[i];
     }

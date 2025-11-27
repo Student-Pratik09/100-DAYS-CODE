@@ -15,7 +15,7 @@ int main() {
         sum += arr[i];
     }
 
-    // Sum of first n natural numbers (0 to n)
+    
     expectedSum = n * (n + 1) / 2;
 
     printf("Missing number: %d\n", expectedSum - sum);

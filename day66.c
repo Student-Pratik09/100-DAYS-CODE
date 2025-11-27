@@ -9,21 +9,20 @@ int main() {
     int nums[100];
     int i, j, found = 0;
 
-    // Input array size
+    
     printf("Enter size of array: ");
     scanf("%d", &n);
 
-    // Input array elements
+
     printf("Enter array elements: ");
     for (i = 0; i < n; i++) {
         scanf("%d", &nums[i]);
     }
 
-    // Input target
     printf("Enter target value: ");
     scanf("%d", &target);
 
-    // Find two distinct indices i and j
+    
     for (i = 0; i < n; i++) {
         for (j = i + 1; j < n; j++) {
             if (nums[i] + nums[j] == target) {
@@ -35,7 +34,6 @@ int main() {
         if (found) break;
     }
 
-    // If no pair found
     if (!found) {
         printf("-1 -1\n");
     }

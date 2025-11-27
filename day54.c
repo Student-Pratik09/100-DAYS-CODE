@@ -13,8 +13,8 @@ int main() {
     int pivot = -1;
 
     for (int x = 1; x <= n; x++) {
-        leftSum += x;  // sum of 1 to x
-        int rightSum = totalSum - (x - 1) * x / 2;  // sum of x to n
+        leftSum += x;  
+        int rightSum = totalSum - (x - 1) * x / 2;  
 
         if (leftSum == rightSum) {
             pivot = x;

@@ -21,7 +21,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // For each element, find previous greater element
+    
     for (int i = 0; i < n; i++) {
         int prev = -1;
         for (int j = i - 1; j >= 0; j--) {

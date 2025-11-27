@@ -25,13 +25,13 @@ int main() {
 
     int maxSum = 0, windowSum = 0;
 
-    // Find sum of first 'k' elements
+    
     for (int i = 0; i < k; i++) {
         windowSum += arr[i];
     }
     maxSum = windowSum;
 
-    // Slide the window
+    
     for (int i = k; i < n; i++) {
         windowSum += arr[i] - arr[i - k];
         if (windowSum > maxSum)

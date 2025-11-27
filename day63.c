@@ -3,7 +3,7 @@ The task is to find the kth smallest element in the array. Print the kth smalles
 
 #include <stdio.h>
 
-// Function to sort array using simple bubble sort
+
 void bubbleSort(int arr[], int n) {
     for(int i = 0; i < n-1; i++) {
         for(int j = 0; j < n-i-1; j++) {
@@ -35,8 +35,8 @@ int main() {
         return 0;
     }
 
-    bubbleSort(arr, n); // sort the array
-    printf("%d\n", arr[k-1]); // kth smallest element (0-based index)
+    bubbleSort(arr, n); 
+    printf("%d\n", arr[k-1]); 
     
     return 0;
 }

@@ -16,7 +16,7 @@ int main() {
         scanf("%d", &nums[i]);
     }
     
-    // Boyer-Moore Majority Vote Algorithm
+    
     int candidate = 0, count = 0;
     
     for (int i = 0; i < n; i++) {
@@ -29,8 +29,7 @@ int main() {
             count--;
         }
     }
-    
-    // Verify if candidate is majority
+
     count = 0;
     for (int i = 0; i < n; i++) {
         if (nums[i] == candidate)

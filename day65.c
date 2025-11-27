@@ -9,25 +9,25 @@ int main() {
     int freq1[26] = {0}, freq2[26] = {0};
     int i;
 
-    // Input two strings
+    
     printf("Enter first string: ");
     scanf("%s", s);
     printf("Enter second string: ");
     scanf("%s", t);
 
-    // If lengths are not equal, they can't be anagrams
+    
     if (strlen(s) != strlen(t)) {
         printf("Not Anagram\n");
         return 0;
     }
 
-    // Count frequency of each character in both strings
+    
     for (i = 0; s[i] != '\0'; i++) {
         freq1[s[i] - 'a']++;
         freq2[t[i] - 'a']++;
     }
 
-    // Compare the frequency arrays
+    
     for (i = 0; i < 26; i++) {
         if (freq1[i] != freq2[i]) {
             printf("Not Anagram\n");
